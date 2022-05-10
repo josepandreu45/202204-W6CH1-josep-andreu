@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addItemActionCreator } from "../../redux/features/listSlice";
 import { addListItemThunk } from "../../redux/thunks/thunks";
 
 const Form = () => {
