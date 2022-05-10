@@ -9,7 +9,7 @@ import loadListThunk from "./redux/thunks/thunks";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(loadListThunk);
+    dispatch(loadListThunk());
   }, [dispatch]);
 
   return (
