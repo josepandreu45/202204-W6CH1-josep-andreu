@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addItemActionCreator } from "../../redux/features/listSlice";
+import { addListItemThunk } from "../../redux/thunks/thunks";
 
 const Form = () => {
   const generateRandomNumber = () => {
@@ -26,7 +27,7 @@ const Form = () => {
       return;
     }
     itemToDo.id = generateRandomNumber();
-    dispatch(addItemActionCreator(itemToDo));
+    dispatch(addListItemThunk(itemToDo));
     setItemToDo(initialItemToDo);
   };
 

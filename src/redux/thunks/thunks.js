@@ -1,5 +1,6 @@
 import axios from "axios";
 import {
+  addItemActionCreator,
   loadListActionCreator,
   removeItemActionCreator,
 } from "../features/listSlice";
@@ -17,6 +18,14 @@ export const delteListItemThunk = (id) => async (dispatch) => {
 
   if (status === 200) {
     dispatch(removeItemActionCreator(id));
+  }
+};
+
+export const addListItemThunk = (item) => async (dispatch) => {
+  const { status } = await axios.post(process.env.REACT_APP_API_URL, item);
+
+  if (status === 201) {
+    dispatch(addItemActionCreator(item));
   }
 };
 
