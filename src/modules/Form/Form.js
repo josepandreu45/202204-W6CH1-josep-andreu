@@ -42,7 +42,7 @@ const Form = () => {
           onChange={handleNameInputChange}
         />
 
-        <input type="submit" value="Create" className="submit-input" />
+        <input type="submit" value="+" className="submit-input" />
       </form>
     </>
   );
