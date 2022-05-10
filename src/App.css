@@ -6,4 +6,33 @@ li {
   border: 1px solid black;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+
+.submit-input {
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+
+button {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete {
+  border-radius: 50%;
+  background-color: red;
+  height: 25px;
+  width: 25px;
+}
+
+form {
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
 }

@@ -12,7 +12,12 @@ const ToDoListItem = ({ toDoListItem: { id, name, done } }) => {
       <p>
         Done: {done && "Yes"} {!done && "No"}
       </p>
-      <button onClick={() => dispatch(delteListItemThunk(id))}>Delete</button>
+      <button
+        className="delete"
+        onClick={() => dispatch(delteListItemThunk(id))}
+      >
+        -
+      </button>
       <button onClick={() => dispatch(markAsDoneActionCreator(id))}>
         Done
       </button>
